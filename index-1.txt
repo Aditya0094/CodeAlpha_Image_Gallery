@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(0)">
+            <img src="https://cdn.pixabay.com/photo/2021/03/29/10/33/rama-
+6133619_640.png" alt="Image 1">
+            <div class="overlay"><p>Image 1</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(1)">
+            <img src="https://th.bing.com/th/id/OIP.g5dGP5OAs5PhvPPyfPmyNgHaEK? rs=1&pid=ImgDetMain" alt="Image 2">
+            <div class="overlay"><p>Image 2</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(2)">
+            <img src="https://th.bing.com/th/id/OIP.jH_flkY1MpklL46UFwMCtQAAAA? rs=1&pid=ImgDetMain" alt="Image 3">
+            <div class="overlay"><p>Image 3</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(3)">
+            <img 
+src="https://i.pinimg.com/originals/8b/e0/2b/8be02bfb30ba48a946c260cec6dc1104.jpg" 
+alt="Image 4">
+            <div class="overlay"><p>Image 4</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(4)">
+            <img 
+src="https://i.pinimg.com/originals/37/7d/f1/377df159c1326deb3124971e9417c396.jpg" 
+alt="Image 5">
+            <div class="overlay"><p>Image 5</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(5)">
+            <img src="https://th.bing.com/th/id/OIP.GcE1PK9fDPA12sK4gX8DUQHaHa? rs=1&pid=ImgDetMain" alt="Image 6">
+            <div class="overlay"><p>Image 6</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(6)">
+            <img 
+src="https://images.statusfacebook.com/profile_pictures/nature/nature_profile_pictu
+res_02.jpg" alt="Image 7">
+            <div class="overlay"><p>Image 7</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(7)">
+            <img src="https://th.bing.com/th/id/OIP.R-Yy6mvB9xaae1EABtr4-QHaES? rs=1&pid=ImgDetMain" alt="Image 8">
+            <div class="overlay"><p>Image 8</p></div>
+        </div>
+        <div class="gallery-item" onclick="openModal(8)">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-
+736885_1280.jpg" alt="Image 9">
+            <div class="overlay"><p>Image 9</p></div>
+        </div><div class="gallery-item" onclick="openModal(9)">
+            <img src="https://pics.craiyon.com/2023-10-
+29/8e73f9da797d409b8a23c931dec6d83a.webp" alt="Image 4">
+            <div class="overlay"><p>Image 10</p></div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="nav-buttons">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div class="dots" id="dots-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
